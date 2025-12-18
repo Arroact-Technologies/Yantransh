@@ -579,80 +579,128 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      $(function(){
-        var $carousel = $('.best-carousel');
-        $carousel.owlCarousel({
-          items:3,
-          margin:24,
-          loop:true,
-          nav:true,
-          dots:false,
-          mouseDrag:true,
-          touchDrag:true,
-          responsive:{0:{items:1.2,margin:24, nav: false},768:{items:2,margin:20},992:{items:2.3}}
-        });
-        function updateProgress(e){
-          if(!e.namespace) return;
-          var carousel = e.relatedTarget;
-          var idx = carousel.relative(carousel.current());
-          var count = carousel.items().length;
-          var pct = ((idx+1)/count)*100;
-          var $section = $('.best-sellers');
-          $section.find('.best-counter').text((idx+1)+'/'+count);
-          $section.find('.best-bar-fill').css('width', pct+'%');
-        }
-        $carousel.on('initialized.owl.carousel changed.owl.carousel', updateProgress);
+  $(function () {
 
-        function setupPresenceSlider(){
-          var $panel = $('.presence-panel.active');
-          var $items = $panel.find('.presence-items');
-          var count = $items.find('.presence-item').length;
-          if(count > 4){
-            if(!$items.hasClass('owl-carousel')){
-              $items.addClass('owl-carousel');
-              $items.owlCarousel({
-                items:4,
-                margin:16,
-                loop:false,
-                nav:true,
-                dots:false,
-                mouseDrag:true,
-                touchDrag:true,
-                responsive:{0:{items:2.3, margin:10},576:{items:2},767:{items:3}, 992:{items:4}}
-              });
-            }
-          }else{
-            if($items.hasClass('owl-carousel')){
-              $items.trigger('destroy.owl.carousel');
-              $items.removeClass('owl-carousel');
-            }
-          }
-        }
-
-        setupPresenceSlider();
-
-        $('.presence-tab').on('click', function(){
-          $('.presence-tab').removeClass('active');
-          $(this).addClass('active');
-          var key = $(this).data('target');
-          $('.presence-panel').removeClass('active').hide();
-          $('#panel-'+key).addClass('active').show();
-          setupPresenceSlider();
-        });
-      });
-    </script>
-
-    <script>
-  const header = document.querySelector('.navbar'); // change selector if needed
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-      header.classList.add('sticky');
-    } else {
-      header.classList.remove('sticky');
+    var $carousel = $('.best-carousel');
+    function getContainerOffset() {
+      var $container = $('.container');
+      return $container.length ? $container.offset().left : 0;
     }
+
+    var initialStagePadding = getContainerOffset();
+    var paddingRemoved = false;
+
+    $carousel.owlCarousel({
+      items: 3,
+      margin: 24,
+      loop: true,
+      nav: true,
+      dots: false,
+      mouseDrag: true,
+      touchDrag: true,
+      stagePadding: initialStagePadding, 
+      responsive: {
+        0: {
+          items: 1.2,
+          margin: 24,
+          nav: false,
+          stagePadding: 16
+        },
+        768: {
+          items: 2,
+          margin: 20,
+          stagePadding: initialStagePadding
+        },
+        992: {
+          items: 2.3,
+          stagePadding: initialStagePadding
+        }
+      }
+    });
+    $carousel.on('dragged.owl.carousel changed.owl.carousel', function () {
+      if (paddingRemoved) return;
+
+      paddingRemoved = true;
+
+      $carousel.trigger('refresh.owl.carousel', {
+        stagePadding: 0
+      });
+    });
+    function updateProgress(e) {
+      if (!e.namespace) return;
+
+      var carousel = e.relatedTarget;
+      var idx = carousel.relative(carousel.current());
+      var count = carousel.items().length;
+      var pct = ((idx + 1) / count) * 100;
+
+      var $section = $('.best-sellers');
+      $section.find('.best-counter').text((idx + 1) + '/' + count);
+      $section.find('.best-bar-fill').css('width', pct + '%');
+    }
+
+    $carousel.on('initialized.owl.carousel changed.owl.carousel', updateProgress);
+
+    function setupPresenceSlider() {
+      var $panel = $('.presence-panel.active');
+      var $items = $panel.find('.presence-items');
+      var count = $items.find('.presence-item').length;
+
+      if (count > 4) {
+        if (!$items.hasClass('owl-carousel')) {
+          $items.addClass('owl-carousel');
+          $items.owlCarousel({
+            items: 4,
+            margin: 16,
+            loop: false,
+            nav: true,
+            dots: false,
+            mouseDrag: true,
+            touchDrag: true,
+            responsive: {
+              0: { items: 2.3, margin: 10 },
+              576: { items: 2 },
+              767: { items: 3 },
+              992: { items: 4 }
+            }
+          });
+        }
+      } else {
+        if ($items.hasClass('owl-carousel')) {
+          $items.trigger('destroy.owl.carousel');
+          $items.removeClass('owl-carousel');
+        }
+      }
+    }
+
+    setupPresenceSlider();
+
+    $('.presence-tab').on('click', function () {
+      $('.presence-tab').removeClass('active');
+      $(this).addClass('active');
+
+      var key = $(this).data('target');
+      $('.presence-panel').removeClass('active').hide();
+      $('#panel-' + key).addClass('active').show();
+
+      setupPresenceSlider();
+    });
+
   });
 </script>
+
+
+    <script>
+      const header = document.querySelector('.navbar');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      });
+    </script>
 <script>
   const scrollTopBtn = document.getElementById('scrollTopBtn');
 
