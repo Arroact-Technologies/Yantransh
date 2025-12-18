@@ -377,6 +377,18 @@ header .navbar-nav .navbar-toggler{
   .pl-breadcrumb{top:16px;left:0}
 }
 
+.ap-about{background:#fff;margin:100px 0;padding:0 40px}
+.ap-visual{display:flex;justify-content:flex-end}
+.ap-svg-desktop{width:100%;max-width:360px;height:auto}
+.ap-svg-mobile{display:none}
+.ap-fill{clip-path: inset(100% 0 0 0);transition:clip-path 2.2s ease}
+.ap-visual.fill-active .ap-fill{clip-path: inset(0 0 0 0)}
+.ap-outline{stroke:#E8E8E8;stroke-width:8;fill:none;opacity:.6}
+@media (max-width: 767.98px){
+  .ap-svg-desktop{display:none}
+  .ap-svg-mobile{display:block;max-width:200px;height:auto;margin-top:20px}
+}
+
 .site-footer{position:relative;background:#0081FE;color:#fff;padding:100px 0;overflow:hidden}
 .site-footer::before,.site-footer::after{content:"";position:absolute;border:29px solid #fff;border-radius:50%;width:450px;height:450px;}
 .site-footer::before{    left: -380px;
