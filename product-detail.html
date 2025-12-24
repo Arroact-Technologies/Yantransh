@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="container d-flex align-items-center">
+          <div class="topbar-left align-items-center order-2 order-md-1">
+            <a href="mailto:info@yantransh.com">
+              <img src="img/email-icon.svg"> 
+              info@yantransh.com
+            </a>
+            <span>|</span>
+            <a href="tel:918847368939">
+              <img src="img/phone-icon.svg"> 
+              +91 8847368939
+            </a>
+          </div>
+          <div class="ms-auto topbar-right d-flex align-items-center position-relative order-md-2 order-1">
+            <a href="#" class="social-badge">
+              <img src="img/youtube-icon.svg" alt="youtube-icon">
+            </a>
+            <a href="#" class="social-badge">
+              <img src="img/insta-icon.svg" alt="insta-icon">
+            </a>
+            <a href="#" class="social-badge">
+              <img src="img/facebook-icon.svg" alt="facebook-icon">
+            </a>
+            <a href="#" class="social-badge">
+              <img src="img/pint-icon.svg" alt="pint-icon">
+            </a>
+
+            <img src="img/red-shape-svg.svg" alt="red-shape-svg" class="social-bgshape">
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/yantrans-icon.svg" alt="yantrans-icon">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item d-lg-none"><a class="nav-link active" aria-current="page" href="#"><img src="img/yantrans-icon.svg" alt="yantrans-icon"></a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Products</a>
+                <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                  <li><a class="dropdown-item" href="product-list.html">Product 1</a></li>
+                  <li><a class="dropdown-item" href="product-list.html">Product 2</a></li>
+                  <li><a class="dropdown-item" href="product-list.html">Product 3</a></li>
+                  <li><a class="dropdown-item" href="product-list.html">Product 4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Download Catalogue</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+            </ul>
+            <div class="d-flex">
+              <a href="#" class="btn btn-contact">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="pd-hero position-relative">
+      <svg class="pd-bgsvg" width="1440" height="1052" viewBox="0 0 1440 1052" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.1" filter="url(#filter0_f_1034_2957)">
+          <rect y="185" width="1440" height="682" fill="url(#paint0_linear_1034_2957)"/>
+        </g>
+        <defs>
+          <filter id="filter0_f_1034_2957" x="-185" y="0" width="1810" height="1052" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="92.5" result="effect1_foregroundBlur_1034_2957"/>
+          </filter>
+          <linearGradient id="paint0_linear_1034_2957" x1="0.562805" y1="185" x2="1516.78" y2="531.847" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#353EE8"/>
+            <stop offset="1" stop-color="#00CAFF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="container">
+        <nav class="pl-breadcrumb" aria-label="Breadcrumb">
+          <ol class="pl-bc-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="sep">›</li>
+            <li><a href="product-list.html">Product</a></li>
+            <li class="sep">›</li>
+            <li><a href="product-list.html">Nalmani</a></li>
+            <li class="sep">›</li>
+            <li class="current">31mm Plastic Diverter Cartridge</li>
+          </ol>
+        </nav>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="pd-ghost-title">31mm Plastic Diverter Cartridge</div>
+            <div class="pr-image pd-image"><img src="img/Product deatil - image.png" alt="Product image"></div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="pd-badges">
+              <span class="pd-badge">Premium Quality</span>
+              <span class="pd-badge pd-badge-ok">In Stock</span>
+            </div>
+            <h2 class="categories-title pd-title">31mm Plastic Diverter Cartridge- YV31047055</h2>
+            <div class="pd-rating">
+              <span class="pd-stars">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.79695 2.28507C5.64648 0.761691 6.07091 0 6.70587 0C7.34084 0 7.76527 0.761691 8.61479 2.28507L8.83472 2.67933C9.0761 3.11247 9.19679 3.32905 9.38453 3.47186C9.57227 3.61468 9.80695 3.66765 10.2763 3.77359L10.7027 3.87014C12.3522 4.24361 13.1762 4.43001 13.3727 5.06096C13.5685 5.69123 13.0066 6.34899 11.8822 7.66385L11.5912 8.00379C11.272 8.37726 11.1117 8.56433 11.04 8.79498C10.9683 9.02631 10.9924 9.27574 11.0407 9.77392L11.0849 10.2278C11.2546 11.9826 11.3397 12.8596 10.8261 13.2491C10.3125 13.6387 9.54009 13.2833 7.99659 12.5726L7.5963 12.3889C7.15779 12.1864 6.93854 12.0858 6.70587 12.0858C6.47321 12.0858 6.25395 12.1864 5.81544 12.3889L5.41582 12.5726C3.87166 13.2833 3.09924 13.6387 2.5863 13.2498C2.07203 12.8596 2.15718 11.9826 2.32682 10.2278L2.37107 9.77459C2.41935 9.27574 2.44349 9.02631 2.37107 8.79566C2.3 8.56433 2.13975 8.37726 1.82059 8.00446L1.52959 7.66385C0.405157 6.34966 -0.156724 5.6919 0.0390625 5.06096C0.234849 4.43001 1.06024 4.24294 2.70968 3.87014L3.13611 3.77359C3.6048 3.66765 3.8388 3.61468 4.02721 3.47186C4.21562 3.32905 4.33564 3.11247 4.57703 2.67933L4.79695 2.28507Z" fill="#FDC700"/></svg>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.79695 2.28507C5.64648 0.761691 6.07091 0 6.70587 0C7.34084 0 7.76527 0.761691 8.61479 2.28507L8.83472 2.67933C9.0761 3.11247 9.19679 3.32905 9.38453 3.47186C9.57227 3.61468 9.80695 3.66765 10.2763 3.77359L10.7027 3.87014C12.3522 4.24361 13.1762 4.43001 13.3727 5.06096C13.5685 5.69123 13.0066 6.34899 11.8822 7.66385L11.5912 8.00379C11.272 8.37726 11.1117 8.56433 11.04 8.79498C10.9683 9.02631 10.9924 9.27574 11.0407 9.77392L11.0849 10.2278C11.2546 11.9826 11.3397 12.8596 10.8261 13.2491C10.3125 13.6387 9.54009 13.2833 7.99659 12.5726L7.5963 12.3889C7.15779 12.1864 6.93854 12.0858 6.70587 12.0858C6.47321 12.0858 6.25395 12.1864 5.81544 12.3889L5.41582 12.5726C3.87166 13.2833 3.09924 13.6387 2.5863 13.2498C2.07203 12.8596 2.15718 11.9826 2.32682 10.2278L2.37107 9.77459C2.41935 9.27574 2.44349 9.02631 2.37107 8.79566C2.3 8.56433 2.13975 8.37726 1.82059 8.00446L1.52959 7.66385C0.405157 6.34966 -0.156724 5.6919 0.0390625 5.06096C0.234849 4.43001 1.06024 4.24294 2.70968 3.87014L3.13611 3.77359C3.6048 3.66765 3.8388 3.61468 4.02721 3.47186C4.21562 3.32905 4.33564 3.11247 4.57703 2.67933L4.79695 2.28507Z" fill="#FDC700"/></svg>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.79695 2.28507C5.64648 0.761691 6.07091 0 6.70587 0C7.34084 0 7.76527 0.761691 8.61479 2.28507L8.83472 2.67933C9.0761 3.11247 9.19679 3.32905 9.38453 3.47186C9.57227 3.61468 9.80695 3.66765 10.2763 3.77359L10.7027 3.87014C12.3522 4.24361 13.1762 4.43001 13.3727 5.06096C13.5685 5.69123 13.0066 6.34899 11.8822 7.66385L11.5912 8.00379C11.272 8.37726 11.1117 8.56433 11.04 8.79498C10.9683 9.02631 10.9924 9.27574 11.0407 9.77392L11.0849 10.2278C11.2546 11.9826 11.3397 12.8596 10.8261 13.2491C10.3125 13.6387 9.54009 13.2833 7.99659 12.5726L7.5963 12.3889C7.15779 12.1864 6.93854 12.0858 6.70587 12.0858C6.47321 12.0858 6.25395 12.1864 5.81544 12.3889L5.41582 12.5726C3.87166 13.2833 3.09924 13.6387 2.5863 13.2498C2.07203 12.8596 2.15718 11.9826 2.32682 10.2278L2.37107 9.77459C2.41935 9.27574 2.44349 9.02631 2.37107 8.79566C2.3 8.56433 2.13975 8.37726 1.82059 8.00446L1.52959 7.66385C0.405157 6.34966 -0.156724 5.6919 0.0390625 5.06096C0.234849 4.43001 1.06024 4.24294 2.70968 3.87014L3.13611 3.77359C3.6048 3.66765 3.8388 3.61468 4.02721 3.47186C4.21562 3.32905 4.33564 3.11247 4.57703 2.67933L4.79695 2.28507Z" fill="#FDC700"/></svg>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.79695 2.28507C5.64648 0.761691 6.07091 0 6.70587 0C7.34084 0 7.76527 0.761691 8.61479 2.28507L8.83472 2.67933C9.0761 3.11247 9.19679 3.32905 9.38453 3.47186C9.57227 3.61468 9.80695 3.66765 10.2763 3.77359L10.7027 3.87014C12.3522 4.24361 13.1762 4.43001 13.3727 5.06096C13.5685 5.69123 13.0066 6.34899 11.8822 7.66385L11.5912 8.00379C11.272 8.37726 11.1117 8.56433 11.04 8.79498C10.9683 9.02631 10.9924 9.27574 11.0407 9.77392L11.0849 10.2278C11.2546 11.9826 11.3397 12.8596 10.8261 13.2491C10.3125 13.6387 9.54009 13.2833 7.99659 12.5726L7.5963 12.3889C7.15779 12.1864 6.93854 12.0858 6.70587 12.0858C6.47321 12.0858 6.25395 12.1864 5.81544 12.3889L5.41582 12.5726C3.87166 13.2833 3.09924 13.6387 2.5863 13.2498C2.07203 12.8596 2.15718 11.9826 2.32682 10.2278L2.37107 9.77459C2.41935 9.27574 2.44349 9.02631 2.37107 8.79566C2.3 8.56433 2.13975 8.37726 1.82059 8.00446L1.52959 7.66385C0.405157 6.34966 -0.156724 5.6919 0.0390625 5.06096C0.234849 4.43001 1.06024 4.24294 2.70968 3.87014L3.13611 3.77359C3.6048 3.66765 3.8388 3.61468 4.02721 3.47186C4.21562 3.32905 4.33564 3.11247 4.57703 2.67933L4.79695 2.28507Z" fill="#FDC700"/></svg>
+              </span>
+              <span class="pd-rate-text">4.9 (127 reviews)</span>
+            </div>
+            <div class="pd-features">
+              <span><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.53221 0.257946C5.94529 -0.0859821 6.55471 -0.0859821 6.96779 0.257946L6.97015 0.259861L6.97427 0.263346L6.98809 0.274975L7.03691 0.316475C7.07853 0.352103 7.13794 0.403489 7.21265 0.469403C7.36206 0.601146 7.57279 0.79136 7.82471 1.03019C8.32706 1.50657 8.99941 2.1828 9.67485 2.9796C10.3476 3.77322 11.0418 4.70774 11.5719 5.701C12.0972 6.685 12.5 7.79772 12.5 8.92857C12.5 12.2817 9.70176 15 6.25 15C2.79822 15 0 12.2817 0 8.92857C0 7.79772 0.402823 6.685 0.928029 5.701C1.45819 4.70774 2.15228 3.77322 2.82507 2.9796C3.50059 2.1828 4.17294 1.50657 4.67529 1.03019C4.92721 0.79136 5.13794 0.601146 5.28735 0.469403C5.36206 0.403489 5.42147 0.352103 5.46309 0.316475L5.51191 0.274975L5.52573 0.263346L5.52985 0.259861L5.53221 0.257946Z" fill="#1255FF"/></svg> Water Efficient</span>
+              <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 5.83203C10.4602 5.83203 10.8333 6.20513 10.8333 6.66536V11.8076C11.8043 12.1508 12.5 13.0769 12.5 14.1654C12.5 15.5461 11.3807 16.6654 10 16.6654C8.61925 16.6654 7.5 15.5461 7.5 14.1654C7.5 13.0769 8.19566 12.1508 9.16667 11.8076V6.66536C9.16667 6.20513 9.53975 5.83203 10 5.83203Z" fill="#F86541"/><path fill-rule="evenodd" clip-rule="evenodd" d="M9.99479 2.29297C8.95929 2.29297 8.11979 3.13244 8.11979 4.16797V10.8343C8.11979 11.0309 8.02733 11.216 7.87016 11.3341C7.00851 11.9813 6.45312 13.0096 6.45312 14.168C6.45312 16.124 8.03878 17.7096 9.99479 17.7096C11.9508 17.7096 13.5365 16.124 13.5365 14.168C13.5365 13.0098 12.981 11.9816 12.1194 11.3344C11.9623 11.2163 11.8698 11.0312 11.8698 10.8346V4.16797C11.8698 3.13244 11.0303 2.29297 9.99479 2.29297ZM6.86979 4.16797C6.86979 2.44208 8.2689 1.04297 9.99479 1.04297C11.7207 1.04297 13.1198 2.44208 13.1198 4.16797V10.5358C14.1393 11.4136 14.7865 12.7152 14.7865 14.168C14.7865 16.8143 12.6411 18.9596 9.99479 18.9596C7.34842 18.9596 5.20312 16.8143 5.20312 14.168C5.20312 12.7152 5.85022 11.4134 6.86979 10.5355V4.16797Z" fill="#F86541"/></svg> Temperature Control</span>
+              <span><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.12502 0C11.2786 0 14.1344 1.01306 16.0335 2.65137C16.1712 2.77009 16.25 2.94323 16.25 3.125V8.12498L16.2443 8.45865C16.1234 11.8758 14.1564 14.2252 12.2583 15.7015C11.277 16.4647 10.2992 17.0079 9.56785 17.36C9.20385 17.5353 8.5481 17.7955 8.32685 17.8833L8.32277 17.8849C8.19443 17.9276 8.05552 17.9276 7.92727 17.8849L7.92318 17.8833C7.70177 17.7954 7.0461 17.5353 6.6821 17.36C5.95078 17.0079 4.97225 16.4648 3.99088 15.7015C2.03178 14.1776 0 11.7233 0 8.12498V3.125C0 2.94323 0.0788416 2.77009 0.216467 2.65137C2.11567 1.01306 4.97139 0 8.12502 0ZM11.2142 6.28581C10.8888 5.96037 10.3613 5.96037 10.0358 6.28581L7.29168 9.02998L6.21419 7.95248C5.88875 7.62707 5.36124 7.62707 5.03581 7.95248C4.71037 8.2779 4.71037 8.8054 5.03581 9.13082L6.70243 10.7975C7.02793 11.1229 7.55543 11.1229 7.88085 10.7975L11.2142 7.46415C11.5396 7.13878 11.5396 6.61125 11.2142 6.28581Z" fill="#18891A"/></svg> leak Proof</span>
+            </div>
+            <p class="about-lead pd-desc">The YV31047055 Plastic Diverter Cartridge ensures smooth operation and lasting performance with a durable ceramic disc tested for 70,000+ cycles.</p>
+            <ul class="pd-points">
+              <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.95833 17.9167C4.01078 17.9167 0 13.9059 0 8.95833C0 4.01078 4.01078 0 8.95833 0C13.9059 0 17.9167 4.01078 17.9167 8.95833C17.9167 13.9059 13.9059 17.9167 8.95833 17.9167ZM12.6917 6.77297C13.0954 6.55214 13.2438 6.04577 13.0229 5.64198C12.8021 5.23818 12.2957 5.08985 11.892 5.31068C10.3681 6.14405 9.108 7.75242 8.26075 9.04967C7.94767 9.52917 7.68017 9.98308 7.46617 10.3676C7.26653 10.1739 7.06882 10.0058 6.89198 9.866C6.66058 9.68308 6.45235 9.53875 6.30052 9.43933L6.03799 9.27625C5.63821 9.04825 5.12927 9.1875 4.90127 9.58733C4.67331 9.987 4.81244 10.4957 5.21202 10.7239L5.38726 10.8335C5.50627 10.9114 5.67303 11.0269 5.85831 11.1734C6.23961 11.4748 6.65105 11.87 6.90998 12.3029C7.06889 12.5686 7.362 12.7242 7.67108 12.7072C7.98008 12.6902 8.25425 12.503 8.383 12.2216L8.46492 12.0504C8.52133 11.9351 8.60583 11.7664 8.71583 11.5587C8.93625 11.1423 9.25675 10.5727 9.65617 9.961C10.4757 8.70625 11.5488 7.39792 12.6917 6.77297Z" fill="#18891A"/></svg> 10-Year Warranty</li>
+              <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.95833 17.9167C4.01078 17.9167 0 13.9059 0 8.95833C0 4.01078 4.01078 0 8.95833 0C13.9059 0 17.9167 4.01078 17.9167 8.95833C17.9167 13.9059 13.9059 17.9167 8.95833 17.9167ZM12.6917 6.77297C13.0954 6.55214 13.2438 6.04577 13.0229 5.64198C12.8021 5.23818 12.2957 5.08985 11.892 5.31068C10.3681 6.14405 9.108 7.75242 8.26075 9.04967C7.94767 9.52917 7.68017 9.98308 7.46617 10.3676C7.26653 10.1739 7.06882 10.0058 6.89198 9.866C6.66058 9.68308 6.45235 9.53875 6.30052 9.43933L6.03799 9.27625C5.63821 9.04825 5.12927 9.1875 4.90127 9.58733C4.67331 9.987 4.81244 10.4957 5.21202 10.7239L5.38726 10.8335C5.50627 10.9114 5.67303 11.0269 5.85831 11.1734C6.23961 11.4748 6.65105 11.87 6.90998 12.3029C7.06889 12.5686 7.362 12.7242 7.67108 12.7072C7.98008 12.6902 8.25425 12.503 8.383 12.2216L8.46492 12.0504C8.52133 11.9351 8.60583 11.7664 8.71583 11.5587C8.93625 11.1423 9.25675 10.5727 9.65617 9.961C10.4757 8.70625 11.5488 7.39792 12.6917 6.77297Z" fill="#18891A"/></svg> ISO 9001:2015 Certified</li>
+              <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.95833 17.9167C4.01078 17.9167 0 13.9059 0 8.95833C0 4.01078 4.01078 0 8.95833 0C13.9059 0 17.9167 4.01078 17.9167 8.95833C17.9167 13.9059 13.9059 17.9167 8.95833 17.9167ZM12.6917 6.77297C13.0954 6.55214 13.2438 6.04577 13.0229 5.64198C12.8021 5.23818 12.2957 5.08985 11.892 5.31068C10.3681 6.14405 9.108 7.75242 8.26075 9.04967C7.94767 9.52917 7.68017 9.98308 7.46617 10.3676C7.26653 10.1739 7.06882 10.0058 6.89198 9.866C6.66058 9.68308 6.45235 9.53875 6.30052 9.43933L6.03799 9.27625C5.63821 9.04825 5.12927 9.1875 4.90127 9.58733C4.67331 9.987 4.81244 10.4957 5.21202 10.7239L5.38726 10.8335C5.50627 10.9114 5.67303 11.0269 5.85831 11.1734C6.23961 11.4748 6.65105 11.87 6.90998 12.3029C7.06889 12.5686 7.362 12.7242 7.67108 12.7072C7.98008 12.6902 8.25425 12.503 8.383 12.2216L8.46492 12.0504C8.52133 11.9351 8.60583 11.7664 8.71583 11.5587C8.93625 11.1423 9.25675 10.5727 9.65617 9.961C10.4757 8.70625 11.5488 7.39792 12.6917 6.77297Z" fill="#18891A"/></svg> Free Installation Guide</li>
+              <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.95833 17.9167C4.01078 17.9167 0 13.9059 0 8.95833C0 4.01078 4.01078 0 8.95833 0C13.9059 0 17.9167 4.01078 17.9167 8.95833C17.9167 13.9059 13.9059 17.9167 8.95833 17.9167ZM12.6917 6.77297C13.0954 6.55214 13.2438 6.04577 13.0229 5.64198C12.8021 5.23818 12.2957 5.08985 11.892 5.31068C10.3681 6.14405 9.108 7.75242 8.26075 9.04967C7.94767 9.52917 7.68017 9.98308 7.46617 10.3676C7.26653 10.1739 7.06882 10.0058 6.89198 9.866C6.66058 9.68308 6.45235 9.53875 6.30052 9.43933L6.03799 9.27625C5.63821 9.04825 5.12927 9.1875 4.90127 9.58733C4.67331 9.987 4.81244 10.4957 5.21202 10.7239L5.38726 10.8335C5.50627 10.9114 5.67303 11.0269 5.85831 11.1734C6.23961 11.4748 6.65105 11.87 6.90998 12.3029C7.06889 12.5686 7.362 12.7242 7.67108 12.7072C7.98008 12.6902 8.25425 12.503 8.383 12.2216L8.46492 12.0504C8.52133 11.9351 8.60583 11.7664 8.71583 11.5587C8.93625 11.1423 9.25675 10.5727 9.65617 9.961C10.4757 8.70625 11.5488 7.39792 12.6917 6.77297Z" fill="#18891A"/></svg> Fast Delivery Available</li>
+            </ul>
+            <div class="pd-actions">
+              <a href="#" class="btn btn-contact pd-download">Download Catalogue</a>
+              <a href="#" class="btn pd-enquiry">Enquire now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="td-section">
+      <div class="container">
+        <div class="td-title">Technical details</div>
+        <div class="td-grid">
+          <div class="td-card">
+            <div class="pretitle-alignment td-ghost">Specifications</div>
+            <h3 class="td-subtitle">Product Detail</h3>
+            <div class="td-rows">
+              <div class="td-row"><span>Material</span><strong>Ceramic Disc</strong></div>
+              <div class="td-row"><span>Type</span><strong>Quarter Turn</strong></div>
+              <div class="td-row"><span>Size</span><strong>35mm / 40mm</strong></div>
+              <div class="td-row"><span>Thread</span><strong>Universal</strong></div>
+              <div class="td-row"><span>Pressure</span><strong>0.5 – 5 Bar</strong></div>
+              <div class="td-row"><span>Temperature</span><strong>0°C – 90°C</strong></div>
+            </div>
+          </div>
+          <div class="td-card">
+            <div class="pretitle-alignment td-ghost">Performance</div>
+            <h3 class="td-subtitle">Product Performance</h3>
+            <div class="td-rows">
+              <div class="td-row"><span>Lifecycle</span><strong>500,000+ Operations</strong></div>
+              <div class="td-row"><span>Seal</span><strong>99.9% Drip-Free</strong></div>
+              <div class="td-row"><span>Flow Rate</span><strong>8–12 LPM</strong></div>
+              <div class="td-row"><span>Noise</span><strong>Ultra-Quiet</strong></div>
+              <div class="td-row"><span>Corrosion Resistance</span><strong>Excellent</strong></div>
+              <div class="td-row"><span>Warranty</span><strong>10 Years</strong></div>
+            </div>
+          </div>
+          <div class="td-card td-wide">
+            <div class="pretitle-alignment td-ghost">Quality Tests</div>
+            <h3 class="td-subtitle">Test Results</h3>
+            <div class="td-rows td-two-col">
+              <div class="td-row"><span>Burst Test</span><strong>No deformation under 35 kg/cm² water pressure</strong></div>
+              <div class="td-row"><span>Gland Nut Torque</span><strong>6–8 Nm</strong></div>
+              <div class="td-row"><span>Lever Break Torque</span><strong>2–6.8 Nm</strong></div>
+              <div class="td-row"><span>Life Test</span><strong>Minimum 70,000 Cycles</strong></div>
+              <div class="td-row"><span>Temperature Range</span><strong>4°C – 90°C</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="how-product">
+          <svg width="191" height="239" viewBox="0 0 191 239" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-svg">
+            <g opacity="0.08" clip-path="url(#clip0_1034_3331)">
+            <path d="M152.111 175.678C149 188.681 143.01 200.691 134.553 211.028C132.417 213.646 130.115 216.157 127.666 218.542C126.661 219.525 125.627 220.488 124.574 221.432L124.535 221.471C121.765 223.895 118.78 226.104 115.609 228.07C112.478 230.036 109.171 231.749 105.738 233.199C102.597 234.542 99.3484 235.662 96.0221 236.547C90.4132 238.046 86.2577 238.689 80.6878 238.932C79.6245 238.981 78.5222 239 77.4005 239C73.1182 239 68.6018 238.669 65.2071 238.085C43.2592 234.299 24.4424 220.965 12.2394 200.536C-0.0710108 179.96 -3.22176 155.765 3.36263 132.415C10.1031 108.521 24.4912 88.3159 38.4013 68.7626L38.9379 68.0132C50.0874 52.3433 62.7295 34.5808 70.5332 15.8256L77.1078 0L83.6825 15.8256C90.101 31.2619 99.6898 45.7736 109.542 59.8181C108.928 60.6746 108.323 61.5311 107.718 62.3779L107.181 63.1273C105.055 66.1153 102.928 69.113 100.802 72.1399C92.4324 60.295 84.0141 48.1095 77.1078 35.1161C69.2261 49.9879 59.4324 63.7502 50.5459 76.2375L50.0094 76.9869C36.8016 95.5474 23.1353 114.741 17.0679 136.26C11.5565 155.813 14.1805 176.058 24.4619 193.265C34.5092 210.074 49.8436 221.023 67.636 224.089C70.8941 224.654 76.0055 224.917 80.0635 224.741C84.6189 224.537 87.7209 224.06 92.3543 222.824C92.725 222.727 93.0957 222.62 93.4664 222.513C96.9098 221.53 100.246 220.225 103.397 218.649C107.659 216.517 111.61 213.88 115.112 210.814C115.258 210.687 115.405 210.551 115.541 210.424C117.98 208.215 120.262 205.869 122.36 203.417C130.085 194.424 135.519 183.854 138.26 172.379C139.44 167.444 140.035 162.295 140.035 157.01C140.035 148.883 138.63 140.445 135.86 132.055C132.358 121.437 127.042 111.48 121.218 102.117C124.028 97.8055 126.974 93.5425 129.949 89.3184C137.528 100.959 144.756 113.592 149.39 127.607C154.784 143.959 155.73 160.582 152.111 175.678Z" fill="black"/>
+            <path d="M228.839 175.678C224.615 193.324 215.095 209.149 201.312 221.432L201.263 221.471C193.254 228.498 183.392 233.715 172.76 236.547C167.151 238.046 162.995 238.689 157.425 238.932C156.352 238.981 155.25 239 154.128 239C149.856 239 145.33 238.669 141.945 238.085C136.209 237.102 130.688 235.457 125.44 233.199C127.352 231.807 129.205 230.338 130.971 228.781L131.078 228.693C133.312 226.698 135.448 224.625 137.477 222.464C139.73 223.145 142.032 223.68 144.374 224.089C147.632 224.654 152.733 224.917 156.791 224.741C161.356 224.537 164.458 224.06 169.082 222.824C177.598 220.556 185.47 216.4 191.849 210.814C203.448 200.468 211.447 187.182 214.988 172.379C216.178 167.434 216.763 162.276 216.763 156.991C216.763 148.864 215.368 140.445 212.598 132.055C207.652 117.096 199.136 103.451 190.669 90.9341C187.167 85.7465 183.431 80.4713 179.822 75.3712C170.711 62.5044 161.376 49.2969 153.845 35.1161C146.803 48.4015 138.238 60.7914 130.151 72.1886C129.186 73.5512 128.22 74.9041 127.274 76.2375L126.737 76.9869C125.869 78.2035 125.001 79.4298 124.133 80.6464C121.197 84.7829 118.27 88.9486 115.441 93.1726C113.451 96.1217 111.52 99.0999 109.657 102.107C102.946 112.96 97.1903 124.25 93.7957 136.26C88.2843 155.813 90.9083 176.058 101.199 193.265C103.424 196.983 105.911 200.429 108.623 203.553C105.062 206.667 100.917 209.237 96.4197 211.154C93.7177 207.874 91.2302 204.322 88.9672 200.536C76.6665 179.96 73.5158 155.765 80.0904 132.415C84.519 116.736 92.235 102.633 100.956 89.2698C102.858 86.3499 104.809 83.469 106.779 80.6075C109.54 76.617 112.349 72.6752 115.129 68.7626L115.49 68.2663L115.666 68.0132C117.568 65.3464 119.509 62.6115 121.46 59.8279C130.99 46.2603 140.794 31.3885 147.261 15.8256L153.836 0L160.41 15.8256C167.96 33.9677 179.9 50.8444 191.45 67.1762C195.108 72.3443 198.883 77.6779 202.472 82.9823C211.515 96.3455 220.635 111.003 226.118 127.607C231.522 143.959 232.458 160.582 228.839 175.678Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1034_3331">
+            <rect width="231" height="239" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+
+            <div class="container">
+              <div class="pretitle-alignment">How This Product Works</div>
+              <h2 class="categories-title">Quick guide to installation and performance</h2>
+              
+              <div class="owl-carousel how-carousel">
+                <div class="how-slide">
+                  <div class="how-video">
+                    <div class="hv-media">
+                      <video class="hv-video" src="videos/yantransh-banner-video.mp4" playsinline></video>
+                      <div class="hv-play">
+                        <svg width="156" height="156" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M103.729 74.94L71.3363 51.3928C70.7543 50.9686 70.0664 50.7136 69.3485 50.656C68.6306 50.5985 67.9108 50.7407 67.2687 51.0668C66.6266 51.393 66.0872 51.8904 65.7103 52.5041C65.3333 53.1177 65.1335 53.8237 65.1328 54.5439V101.623C65.1306 102.344 65.3289 103.052 65.7054 103.667C66.0819 104.282 66.622 104.781 67.2653 105.107C67.9086 105.433 68.6299 105.574 69.3487 105.515C70.0676 105.455 70.7557 105.196 71.3363 104.768L103.729 81.2421C104.23 80.8831 104.638 80.41 104.919 79.8621C105.2 79.3141 105.347 78.707 105.347 78.091C105.347 77.4751 105.2 76.868 104.919 76.32C104.638 75.7721 104.23 75.299 103.729 74.94Z" fill="white"/><path d="M78.0026 0C34.9158 0 0 34.9158 0 78.0026C0 121.074 34.9158 155.979 78.0026 155.979C121.079 155.979 156 121.069 156 78.0026C156.005 34.9158 121.079 0 78.0026 0ZM78.0026 142.965C42.1212 142.965 13.0298 113.889 13.0298 78.0026C13.0298 42.1316 42.1212 13.0195 78.0026 13.0195C113.879 13.0195 142.965 42.1264 142.965 78.0026C142.97 113.889 113.879 142.965 78.0026 142.965Z" fill="white"/></svg>
+                      </div>
+                    </div>
+                    <div class="hv-caption">YV31047055 Plastic Diverter Cartridge Installation</div>
+                  </div>
+                  <h2 class="step-title">Step 1 : Remove the Old Cartridge</h2>
+                  <p class="how-desc">Begin by turning off the main water supply to prevent any accidental leakage. Using a wrench or Allen key, gently unscrew and lift the faucet handle. Once removed, you’ll see the old cartridge seated inside the faucet body. Grip it carefully and pull it out with a steady motion.</p>
+                </div>
+                <div class="how-slide">
+                  <div class="how-video">
+                    <div class="hv-media">
+                      <video class="hv-video" src="videos/yantransh-banner-video.mp4" playsinline></video>
+                    </div>
+                    <div class="hv-caption">YV31047055 Plastic Diverter Cartridge Installation</div>
+                  </div>
+                  <h2 class="step-title">Step 2 : Clean the Housing</h2>
+                  <p class="how-desc">Inspect the faucet housing and clean any mineral deposits or debris. Use a soft cloth to wipe the inner surfaces to ensure a smooth fit for the new cartridge.</p>
+                </div>
+                <div class="how-slide">
+                  <div class="how-video">
+                    <div class="hv-media">
+                      <video class="hv-video" src="videos/yantransh-banner-video.mp4" playsinline></video>
+                    </div>
+                    <div class="hv-caption">YV31047055 Plastic Diverter Cartridge Installation</div>
+                  </div>
+                  <h2 class="step-title">Step 3 : Insert New Cartridge</h2>
+                  <p class="how-desc">Align the new cartridge with the grooves inside the faucet and push it in firmly until seated. Make sure orientation pins are matched correctly to avoid leaks.</p>
+                </div>
+                <div class="how-slide">
+                  <div class="how-video">
+                    <div class="hv-media">
+                      <video class="hv-video" src="videos/yantransh-banner-video.mp4" playsinline></video>
+                    </div>
+                    <div class="hv-caption">YV31047055 Plastic Diverter Cartridge Installation</div>
+                  </div>
+                  <h2 class="step-title">Step 4 : Reassemble & Test</h2>
+                  <p class="how-desc">Reattach the handle and tighten the fixing screw. Turn on the main water supply and test for smooth operation and drip‑free performance.</p>
+                </div>
+              </div>
+              <div class="how-bottom">
+                <div class="how-progress">
+                <div class="how-counter">1/4</div>
+                  <div class="how-bar">
+                    <div class="how-fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <section class="catalogue-cta">
+      <div class="container">
+        <div class="catalogue-card version-2">
+          
+          <svg width="257" height="267" viewBox="0 0 257 267" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.4" clip-path="url(#clip0_1061_1162)">
+          <path d="M169.232 196.26C165.77 210.786 159.107 224.203 149.697 235.751C147.321 238.676 144.76 241.481 142.036 244.145C140.918 245.243 139.767 246.319 138.595 247.374L138.552 247.418C135.47 250.125 132.149 252.593 128.622 254.79C125.138 256.986 121.459 258.9 117.639 260.52C114.144 262.02 110.531 263.271 106.83 264.26C100.59 265.934 95.9663 266.652 89.7695 266.924C88.5866 266.978 87.3602 267 86.1122 267C81.3479 267 76.3232 266.63 72.5465 265.978C48.1282 261.748 27.1935 246.852 13.617 224.029C-0.0790033 201.044 -3.58439 174.013 3.74111 147.929C11.2402 121.235 27.2478 98.6626 42.7236 76.8185L43.3205 75.9813C55.725 58.4756 69.7899 38.6321 78.472 17.6797L85.7866 0L93.1013 17.6797C100.242 34.9244 110.91 51.1362 121.871 66.8261C121.188 67.7829 120.515 68.7398 119.842 69.6857L119.245 70.523C116.879 73.861 114.513 77.2099 112.148 80.5915C102.836 67.3589 93.4702 53.7458 85.7866 39.2302C77.0177 55.8443 66.1217 71.2188 56.235 85.169L55.6381 86.0063C40.9438 106.741 25.7393 128.183 18.989 152.223C12.8573 174.068 15.7766 196.684 27.2152 215.907C38.3934 234.685 55.4536 246.917 75.2488 250.342C78.8735 250.973 84.5603 251.267 89.075 251.071C94.1431 250.843 97.5942 250.31 102.749 248.929C103.162 248.82 103.574 248.701 103.986 248.581C107.817 247.483 111.529 246.026 115.034 244.264C119.777 241.883 124.172 238.937 128.068 235.512C128.231 235.37 128.394 235.218 128.546 235.077C131.259 232.608 133.798 229.988 136.132 227.248C144.727 217.201 150.772 205.393 153.821 192.574C155.135 187.061 155.797 181.309 155.797 175.405C155.797 166.326 154.234 156.899 151.152 147.526C147.256 135.664 141.341 124.541 134.862 114.081C137.988 109.264 141.265 104.501 144.575 99.7825C153.008 112.787 161.049 126.9 166.204 142.557C172.206 160.824 173.258 179.395 169.232 196.26Z" fill="white"></path>
+          <path d="M254.604 196.26C249.905 215.973 239.312 233.652 223.978 247.374L223.923 247.418C215.014 255.268 204.042 261.096 192.212 264.26C185.972 265.934 181.349 266.652 175.152 266.924C173.958 266.978 172.732 267 171.484 267C166.73 267 161.695 266.63 157.929 265.978C151.548 264.88 145.405 263.042 139.566 260.52C141.693 258.965 143.755 257.323 145.72 255.583L145.839 255.485C148.324 253.256 150.701 250.94 152.958 248.527C155.465 249.288 158.027 249.886 160.631 250.342C164.256 250.973 169.932 251.267 174.447 251.071C179.526 250.843 182.977 250.31 188.121 248.929C197.595 246.395 206.353 241.753 213.451 235.512C226.354 223.953 235.254 209.112 239.193 192.574C240.517 187.05 241.168 181.287 241.168 175.383C241.168 166.304 239.616 156.899 236.534 147.526C231.032 130.814 221.558 115.57 212.138 101.587C208.241 95.7921 204.085 89.8988 200.07 84.2013C189.933 69.8271 179.547 55.0723 171.169 39.2302C163.334 54.072 153.805 67.9134 144.808 80.6458C143.734 82.1681 142.659 83.6794 141.607 85.169L141.01 86.0063C140.044 87.3654 139.078 88.7354 138.112 90.0946C134.845 94.7156 131.59 99.3693 128.442 104.088C126.229 107.383 124.08 110.71 122.007 114.07C114.54 126.193 108.137 138.806 104.361 152.223C98.2289 174.068 101.148 196.684 112.598 215.907C115.072 220.061 117.839 223.91 120.856 227.4C116.895 230.88 112.283 233.75 107.28 235.892C104.274 232.228 101.506 228.259 98.9885 224.029C85.3034 201.044 81.798 174.013 89.1127 147.929C94.0398 130.412 102.624 114.657 112.326 99.7281C114.443 96.4662 116.613 93.2478 118.805 90.0511C121.877 85.5931 125.002 81.1895 128.095 76.8185L128.497 76.264L128.692 75.9813C130.808 73.002 132.968 69.9467 135.138 66.837C145.741 51.6799 156.648 35.0658 163.844 17.6797L171.158 0L178.473 17.6797C186.873 37.9471 200.156 56.8011 213.006 75.0462C217.076 80.8198 221.275 86.7783 225.269 92.7041C235.33 107.633 245.477 124.008 251.576 142.557C257.588 160.824 258.63 179.395 254.604 196.26Z" fill="white"></path>
+          </g>
+          <defs>
+          <clipPath id="clip0_1061_1162">
+          <rect width="257" height="267" fill="white"></rect>
+          </clipPath>
+          </defs>
+          </svg>
+
+          <h2 class="catalogue-title">100% Tested for guaranteed reliability.</h2>
+          <a href="catalogue.pdf" class="btn catalogue-btn">Download Catalogue</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-6">
+            <div class="cert-pretitle pretitle-alignment">Certifications</div>
+            <h2 class="cert-title">Recognitions That Reflect Our Excellence.</h2>
+            <p class="cert-lead">This certificate is presented to Yantransh in recognition of their dedication, achievements, and commitment to excellence, along with a token of our sincere appreciation.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-badge"><img src="img/iso-logo.svg" alt="iso-logo"></div>
+                <div class="cert-text">
+                  <div class="cert-name">ISO 9000:2015</div>
+                  <div class="cert-desc">We have earned this certificate by continually maintaining the quality standards in our products and operations.</div>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-badge"><img src="img/iapmo-logo.svg" alt="iapmo-logo"></div>
+                <div class="cert-text">
+                  <div class="cert-name">IAPMO: UPC-1</div>
+                  <div class="cert-desc">We have earned this certificate by continually maintaining the quality standards in our products and operations.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements position-relative">
+      <svg class="ach-drop" width="248" height="343" viewBox="0 0 248 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.08" clip-path="url(#clip0_1061_1103)">
+          <path d="M217.96 252.124C213.502 270.785 204.919 288.022 192.801 302.856C189.74 306.613 186.441 310.217 182.933 313.639C181.493 315.05 180.012 316.433 178.502 317.788L178.446 317.844C174.477 321.322 170.199 324.492 165.657 327.314C161.17 330.135 156.432 332.594 151.512 334.675C147.011 336.603 142.356 338.209 137.59 339.48C129.553 341.631 123.599 342.553 115.618 342.902C114.094 342.972 112.515 343 110.907 343C104.771 343 98.2995 342.525 93.4353 341.687C61.9861 336.253 35.0236 317.117 17.5378 287.798C-0.101751 258.27 -4.61647 223.545 4.81831 190.036C14.4767 155.744 35.0935 126.746 55.0253 98.6844L55.7941 97.6089C71.7703 75.1203 89.8851 49.6286 101.067 22.7121L110.488 0L119.909 22.7121C129.106 44.8655 142.846 65.6918 156.963 85.8478C156.082 87.077 155.216 88.3062 154.349 89.5214L153.58 90.5969C150.533 94.8851 147.486 99.1873 144.439 103.531C132.446 86.5322 120.384 69.0442 110.488 50.3968C99.1941 71.74 85.1607 91.4909 72.4272 109.412L71.6585 110.487C52.733 137.125 33.1506 164.67 24.4566 195.553C16.5594 223.615 20.3193 252.668 35.0515 277.364C49.4483 301.487 71.4209 317.201 96.9157 321.601C101.584 322.411 108.908 322.788 114.723 322.537C121.25 322.243 125.695 321.559 132.335 319.785C132.866 319.645 133.397 319.492 133.928 319.338C138.862 317.927 143.642 316.056 148.157 313.793C154.265 310.734 159.926 306.948 164.944 302.548C165.154 302.367 165.363 302.171 165.559 301.99C169.053 298.819 172.324 295.453 175.329 291.933C186.399 279.026 194.185 263.857 198.112 247.389C199.804 240.307 200.656 232.918 200.656 225.333C200.656 213.67 198.644 201.559 194.674 189.519C189.656 174.28 182.038 159.99 173.694 146.553C177.719 140.365 181.941 134.247 186.204 128.185C197.064 144.891 207.421 163.021 214.061 183.135C221.79 206.602 223.146 230.459 217.96 252.124Z" fill="black"></path>
+          <path d="M327.908 252.124C321.856 277.448 308.214 300.16 288.464 317.788L288.394 317.844C276.918 327.928 262.787 335.415 247.552 339.48C239.515 341.631 233.56 342.553 225.579 342.902C224.042 342.972 222.462 343 220.855 343C214.733 343 208.247 342.525 203.397 341.687C195.178 340.276 187.267 337.916 179.747 334.675C182.487 332.678 185.142 330.568 187.672 328.334L187.826 328.208C191.027 325.344 194.088 322.369 196.995 319.268C200.224 320.246 203.523 321.014 206.877 321.601C211.546 322.411 218.856 322.788 224.671 322.537C231.212 322.243 235.657 321.559 242.282 319.785C254.485 316.531 265.764 310.566 274.906 302.548C291.525 287.7 302.986 268.634 308.06 247.389C309.765 240.293 310.604 232.89 310.604 225.305C310.604 213.642 308.605 201.559 304.636 189.519C297.549 168.05 285.347 148.467 273.214 130.504C268.196 123.059 262.843 115.488 257.671 108.169C244.616 89.703 231.24 70.7483 220.449 50.3968C210.358 69.4632 198.085 87.2446 186.498 103.601C185.114 105.557 183.731 107.498 182.375 109.412L181.606 110.487C180.362 112.233 179.118 113.993 177.874 115.739C173.667 121.676 169.474 127.654 165.42 133.716C162.569 137.949 159.801 142.223 157.132 146.539C147.515 162.113 139.268 178.316 134.404 195.553C126.507 223.615 130.267 252.668 145.013 277.364C148.2 282.7 151.764 287.645 155.65 292.128C150.548 296.598 144.608 300.286 138.164 303.037C134.292 298.33 130.728 293.232 127.485 287.798C109.86 258.27 105.345 223.545 114.766 190.036C121.112 167.533 132.168 147.293 144.664 128.115C147.389 123.925 150.185 119.79 153.008 115.684C156.964 109.957 160.989 104.3 164.973 98.6844L165.49 97.9721L165.742 97.6089C168.467 93.7816 171.249 89.8566 174.044 85.8617C187.7 66.3903 201.748 45.047 211.015 22.7121L220.435 0L229.856 22.7121C240.675 48.7486 257.783 72.9692 274.333 96.4076C279.574 103.825 284.983 111.479 290.127 119.092C303.084 138.27 316.153 159.306 324.008 183.135C331.752 206.602 333.094 230.459 327.908 252.124Z" fill="black"></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_1061_1103">
+            <rect width="331" height="343" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+      <div class="container">
+        <div class="pretitle-alignment">Achievements</div>
+        <h2 class="categories-title">Company Milestones</h2>
+        <div class="ach-grid">
+          <div class="ach-item">
+            <div class="ach-value">2.5M+ Units</div>
+            <div class="ach-label">Total Products Delivered</div>
+          </div>
+          <div class="ach-item">
+            <div class="ach-value">50+ Countries</div>
+            <div class="ach-label">Global Clients Served</div>
+          </div>
+          <div class="ach-item">
+            <div class="ach-value">25+</div>
+            <div class="ach-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-slider">
+      <div class="container">
+        <div class="pretitle-alignment">Related Products</div>
+        <h2 class="categories-title">Explore Similar Products</h2>
+      <div class="owl-carousel rp-carousel">
+        <article class="range-card">
+          <div class="rc-image"><img src="img/product-list-demo.svg" alt="Product"></div>
+          <div class="rc-brand">Jalmani</div>
+          <h3 class="rc-title">31mm Plastic Diverter Cartridge- YV31045051</h3>
+          <a href="#" class="rc-link">Know More  →</a>
+        </article>
+        <article class="range-card">
+          <div class="rc-image"><img src="img/product-list-demo.svg" alt="Product"></div>
+          <div class="rc-brand">Jalmani</div>
+          <h3 class="rc-title">31mm Plastic Diverter Cartridge- YV31045051</h3>
+          <a href="#" class="rc-link">Know More  →</a>
+        </article>
+        <article class="range-card">
+          <div class="rc-image"><img src="img/product-list-demo.svg" alt="Product"></div>
+          <div class="rc-brand">Jalmani</div>
+          <h3 class="rc-title">31mm Plastic Diverter Cartridge- YV31045051</h3>
+          <a href="#" class="rc-link">Know More  →</a>
+        </article>
+        <article class="range-card">
+          <div class="rc-image"><img src="img/product-list-demo.svg" alt="Product"></div>
+          <div class="rc-brand">Jalmani</div>
+          <h3 class="rc-title">31mm Plastic Diverter Cartridge- YV31045051</h3>
+          <a href="#" class="rc-link">Know More  →</a>
+        </article>
+
+        <article class="range-card">
+          <div class="rc-image"><img src="img/product-list-demo.svg" alt="Product"></div>
+          <div class="rc-brand">Jalmani</div>
+          <h3 class="rc-title">31mm Plastic Diverter Cartridge- YV31045051</h3>
+          <a href="#" class="rc-link">Know More  →</a>
+        </article>
+
+        <article class="range-card">
+          <div class="rc-image"><img src="img/product-list-demo.svg" alt="Product"></div>
+          <div class="rc-brand">Jalmani</div>
+          <h3 class="rc-title">31mm Plastic Diverter Cartridge- YV31045051</h3>
+          <a href="#" class="rc-link">Know More  →</a>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/">
+               <svg width="236" height="48" viewBox="0 0 236 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M74.6151 13.9796L67.5005 27.7794V34.2059H61.849V27.7794L54.7344 13.9796H61.1605L64.7178 21.7832L68.275 13.9796H74.6151Z" fill="white"/>
+              <path d="M89.1361 30.9065H81.9641L80.874 34.2059H74.9643L82.337 13.9796H88.8205L96.1646 34.2059H90.2262L89.1361 30.9065ZM87.7304 26.6031L85.5501 20.0619L83.3985 26.6031H87.7304Z" fill="white"/>
+              <path d="M116.73 34.2059H111.108L103.62 22.9021V34.2059H97.9972V13.9796H103.62L111.108 25.4268V13.9796H116.73V34.2059Z" fill="white"/>
+              <path d="M135.167 13.9796V18.4552H129.773V34.2059H124.15V18.4552H118.815V13.9796H135.167Z" fill="white"/>
+              <path d="M147.489 34.2059L143.472 26.7465H142.87V34.2059H137.247V13.9796H146.112C147.737 13.9796 149.114 14.2665 150.243 14.8403C151.371 15.395 152.222 16.1696 152.796 17.1642C153.37 18.1396 153.656 19.2394 153.656 20.4635C153.656 21.8406 153.274 23.0551 152.509 24.1071C151.763 25.1399 150.663 25.8763 149.21 26.3162L153.771 34.2059H147.489ZM142.87 22.9021H145.653C146.418 22.9021 146.991 22.7204 147.374 22.357C147.756 21.9936 147.948 21.4676 147.948 20.7791C147.948 20.1288 147.747 19.6219 147.345 19.2585C146.963 18.876 146.398 18.6848 145.653 18.6848H142.87V22.9021Z" fill="white"/>
+              <path d="M169.008 30.9065H161.836L160.746 34.2059H154.836L162.209 13.9796H168.693L176.037 34.2059H170.098L169.008 30.9065ZM167.603 26.6031L165.422 20.0619L163.271 26.6031H167.603Z" fill="white"/>
+              <path d="M196.603 34.2059H190.98L183.492 22.9021V34.2059H177.869V13.9796H183.492L190.98 25.4268V13.9796H196.603V34.2059Z" fill="white"/>
+              <path d="M207.437 34.4067C205.084 34.4067 203.152 33.852 201.642 32.7427C200.131 31.6142 199.318 30.0076 199.203 27.9228H205.199C205.256 28.6305 205.467 29.1469 205.83 29.4721C206.193 29.7972 206.662 29.9598 207.236 29.9598C207.752 29.9598 208.173 29.8355 208.498 29.5868C208.842 29.319 209.014 28.9556 209.014 28.4966C209.014 27.9037 208.737 27.4447 208.182 27.1195C207.628 26.7944 206.729 26.431 205.486 26.0293C204.166 25.5894 203.095 25.1686 202.273 24.767C201.469 24.3462 200.762 23.7437 200.15 22.9595C199.557 22.1562 199.26 21.1138 199.26 19.8323C199.26 18.5317 199.586 17.4224 200.236 16.5043C200.886 15.5671 201.785 14.8595 202.933 14.3813C204.08 13.9031 205.381 13.6641 206.834 13.6641C209.186 13.6641 211.061 14.2187 212.457 15.3281C213.872 16.4183 214.628 17.9579 214.723 19.9471H208.613C208.594 19.3351 208.402 18.876 208.039 18.57C207.695 18.264 207.245 18.111 206.691 18.111C206.27 18.111 205.926 18.2353 205.658 18.4839C205.39 18.7326 205.256 19.0864 205.256 19.5454C205.256 19.928 205.4 20.2627 205.687 20.5496C205.993 20.8173 206.366 21.0564 206.805 21.2668C207.245 21.4581 207.896 21.7067 208.756 22.0128C210.038 22.4527 211.089 22.8926 211.912 23.3325C212.753 23.7533 213.471 24.3557 214.063 25.1399C214.675 25.905 214.981 26.8804 214.981 28.0663C214.981 29.2712 214.675 30.3519 214.063 31.3082C213.471 32.2645 212.6 33.02 211.453 33.5747C210.324 34.1293 208.986 34.4067 207.437 34.4067Z" fill="white"/>
+              <path d="M235.697 13.9796V34.2059H230.075V26.0867H223.218V34.2059H217.595V13.9796H223.218V21.5824H230.075V13.9796H235.697Z" fill="white"/>
+              <g clip-path="url(#clip0_886_548)">
+              <path d="M30.4814 35.2827C29.8579 37.8942 28.6577 40.3064 26.9629 42.3823C26.5348 42.9081 26.0735 43.4124 25.5829 43.8913C25.3815 44.0887 25.1743 44.2823 24.9632 44.4719L24.9554 44.4797C24.4003 44.9664 23.8021 45.4101 23.1668 45.805C22.5394 46.1999 21.8767 46.5439 21.1887 46.8351C20.5592 47.1049 19.9083 47.3297 19.2418 47.5076C18.1178 47.8086 17.2851 47.9376 16.1689 47.9865C15.9559 47.9962 15.735 48.0001 15.5102 48.0001C14.6521 48.0001 13.747 47.9337 13.0668 47.8164C8.66865 47.056 4.89799 44.378 2.45263 40.2751C-0.0142298 36.1428 -0.645606 31.2834 0.673833 26.594C2.02455 21.7951 4.90777 17.7371 7.6952 13.8101L7.80271 13.6596C10.037 10.5125 12.5703 6.94513 14.1341 3.17838L15.4515 0L16.769 3.17838C18.0552 6.27857 19.9767 9.19306 21.951 12.0137C21.8279 12.1857 21.7067 12.3578 21.5855 12.5278L21.478 12.6783C21.0518 13.2784 20.6257 13.8805 20.1996 14.4884C18.5224 12.1095 16.8355 9.66219 15.4515 7.05264C13.8721 10.0395 11.9096 12.8034 10.1288 15.3113L10.0213 15.4618C7.37463 19.1895 4.63606 23.0442 3.42022 27.3661C2.3158 31.2931 2.84162 35.359 4.9019 38.8149C6.91527 42.1907 9.98809 44.3898 13.5535 45.0055C14.2064 45.1189 15.2307 45.1717 16.0438 45.1365C16.9567 45.0954 17.5783 44.9997 18.5068 44.7514C18.5811 44.7319 18.6553 44.7104 18.7296 44.6889C19.4196 44.4914 20.0882 44.2295 20.7195 43.9128C21.5737 43.4847 22.3654 42.955 23.0672 42.3393C23.0965 42.3139 23.1258 42.2865 23.1532 42.2611C23.6418 41.8174 24.0992 41.3463 24.5195 40.8537C26.0677 39.0475 27.1564 36.9247 27.7057 34.6201C27.9422 33.629 28.0615 32.595 28.0615 31.5336C28.0615 29.9014 27.78 28.2066 27.2248 26.5217C26.5231 24.3891 25.4578 22.3894 24.2908 20.5089C24.8538 19.643 25.4441 18.7868 26.0403 17.9385C27.5591 20.2763 29.0076 22.8136 29.9361 25.6284C31.017 28.9123 31.2066 32.251 30.4814 35.2827Z" fill="white"/>
+              <path d="M45.859 35.2827C45.0126 38.8266 43.1048 42.005 40.3428 44.4719L40.333 44.4797C38.7282 45.891 36.7519 46.9387 34.6213 47.5076C33.4973 47.8086 32.6646 47.9376 31.5485 47.9865C31.3335 47.9962 31.1126 48.0001 30.8878 48.0001C30.0316 48.0001 29.1246 47.9337 28.4463 47.8164C27.2969 47.619 26.1906 47.2886 25.1389 46.8351C25.5221 46.5556 25.8935 46.2604 26.2473 45.9477L26.2688 45.9301C26.7164 45.5294 27.1445 45.113 27.5511 44.6791C28.0026 44.8159 28.4639 44.9234 28.9331 45.0055C29.5859 45.1189 30.6083 45.1717 31.4214 45.1365C32.3362 45.0954 32.9578 44.9997 33.8844 44.7514C35.5908 44.296 37.1683 43.4613 38.4467 42.3393C40.7709 40.2614 42.3737 37.5932 43.0833 34.6201C43.3218 33.6271 43.4391 32.5911 43.4391 31.5297C43.4391 29.8975 43.1595 28.2066 42.6044 26.5217C41.6133 23.5173 39.9069 20.7767 38.2102 18.263C37.5084 17.2211 36.7598 16.1616 36.0365 15.1374C34.2108 12.5532 32.3401 9.90067 30.8311 7.05264C29.4198 9.72083 27.7035 12.2092 26.0831 14.4982C25.8895 14.7718 25.696 15.0435 25.5064 15.3113L25.3989 15.4618C25.2249 15.7062 25.051 15.9525 24.877 16.1968C24.2886 17.0276 23.7022 17.8642 23.1353 18.7126C22.7366 19.3048 22.3495 19.903 21.9762 20.507C20.6313 22.6865 19.4781 24.954 18.7978 27.3661C17.6934 31.2931 18.2192 35.359 20.2814 38.8149C20.7271 39.5616 21.2256 40.2536 21.769 40.8811C21.0555 41.5066 20.2248 42.0226 19.3236 42.4077C18.7822 41.7489 18.2837 41.0355 17.8302 40.2751C15.3653 36.1428 14.7339 31.2834 16.0514 26.594C16.9389 23.4449 18.4851 20.6125 20.2326 17.9287C20.6137 17.3423 21.0047 16.7637 21.3995 16.189C21.9527 15.3876 22.5157 14.5959 23.0728 13.8101L23.1451 13.7104L23.1803 13.6596C23.5615 13.124 23.9505 12.5747 24.3414 12.0157C26.2512 9.29079 28.2157 6.30398 29.5117 3.17838L30.8291 0L32.1466 3.17838C33.6596 6.82198 36.0522 10.2115 38.3666 13.4915C39.0996 14.5294 39.8561 15.6006 40.5754 16.666C42.3874 19.3498 44.2151 22.2936 45.3136 25.6284C46.3966 28.9123 46.5842 32.251 45.859 35.2827Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_886_548">
+              <rect width="46.2898" height="48" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+            </a>
+
+          </div>
+          <div class="footer-col">
+            <div>
+              <div class="footer-title">Navigation</div>
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="product-list.html">Our Products</a></li>
+                <li><a href="#">Export</a></li>
+                <li><a href="#">Download Catalogue</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div>
+              <div class="footer-title">Socials</div>
+              <ul class="footer-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-col footer-contact-info">
+            <div>
+               <div class="footer-title">Office</div>
+              <p class="mb-0">No.3-4-5, Jimmy Park, Nr. Mercedes-benz Showroom, Gondal Road-360004, Gujarat-India</p>
+            </div>
+            <div>
+               <div class="footer-title mt-md-3">Factory</div>
+                <p class="mb-0">Plot No.1, Survey NO. 248/P1, At. Gomta Cross Road, Gomta-360320, Gujarat-India.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-contact">
+            <div class="footer-contact-item"><a href="mailto:info@yantransh.com">info@yantransh.com</a></div>
+            <div class="footer-contact-item"><a href="tel:918847368939">+91 8847368939</a></div>
+          </div>
+          <div class="footer-copy">© 2025 — Designed by <a href="https://www.arroact.com/" target="_blank">arroact.com</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      const header = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      });
+    </script>
+    <script>
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+          scrollTopBtn.classList.add('show');
+        } else {
+          scrollTopBtn.classList.remove('show');
+        }
+      });
+      scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+    <script>
+      $(function(){
+        var $hc = $('.how-carousel');
+        if($hc.length && $.fn.owlCarousel){
+          function updateHow(e){
+            if(!e.namespace) return;
+            var c = e.relatedTarget;
+            var idx = c.relative(c.current());
+            var count = c.items().length;
+            var pct = ((idx+1)/count)*100;
+            var $sec = $('.how-product');
+            $sec.find('.how-counter').text((idx+1)+'/'+count);
+            $sec.find('.how-fill').css('width', pct+'%');
+          }
+          $hc.on('initialized.owl.carousel changed.owl.carousel', updateHow);
+          $hc.owlCarousel({
+            items:1,
+            margin:10,
+            loop:false,
+            nav:true,
+            dots:false,
+            mouseDrag:true,
+            touchDrag:true,
+            responsive:{0:{items:1},768:{items:1}}
+          });
+        }
+
+        var $media = $('.hv-media');
+        var video = $media.find('.hv-video').get(0);
+        var $play = $media.find('.hv-play');
+        function syncPlayUI(){
+          if(!video) return;
+          if(video.paused){
+            $media.removeClass('is-playing');
+            $play.show();
+          }else{
+            $media.addClass('is-playing');
+            $play.hide();
+          }
+        }
+        $play.on('click', function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          if(video.paused){ video.play(); } else { video.pause(); }
+          syncPlayUI();
+        });
+        $media.on('click', function(e){
+          if($(e.target).closest('.hv-play').length) return;
+          if(video.paused){ video.play(); } else { video.pause(); }
+          syncPlayUI();
+        });
+        if(video){
+          $(video).on('play pause ended', syncPlayUI);
+          syncPlayUI();
+        }
+
+        var $rp = $('.rp-carousel');
+        if($rp.length && $.fn.owlCarousel){
+          $rp.owlCarousel({
+            items:4,
+            margin:24,
+            loop:false,
+            nav:true,
+            dots:false,
+            mouseDrag:true,
+            touchDrag:true,
+            responsive:{0:{items:1, margin:12},576:{items:2, margin:16},992:{items:4}}
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
